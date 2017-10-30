@@ -19,9 +19,6 @@
     #include <ctype.h>
     #include <stdio.h>
     #include <stdlib.h>
-    /* #include <math.h>                                */
-    /* due to unknown reasons, pow function was missing */
-    /* as compiling with gcc; thus alternative declared */
 %}
 
 /* binary number */
@@ -29,7 +26,7 @@ BIN     ((0)(b|B)[0-1]+)
 /* octal number */
 OCT     ((0)(o|O)[0-7]+)
 OCT0    ((0)[0-7]+)
-/* hexademical number */
+/* hexadecimal number */
 HEX     ((0)(x|X)[0-9A-Fa-f]+)
 
 /* one-line comment after number signs */
@@ -44,37 +41,25 @@ HEX     ((0)(x|X)[0-9A-Fa-f]+)
   /*** Rules section ***/
 
 {BIN} {
-    /* binary to demical */
+    /* binary to decimal */
 
-    int DIGIT = 0;
-    char * NUMB = &yytext[2];
-
-    int LEN = strlen(NUMB);
-    int EXP = LEN - 1;
-    for (int PTR=0; PTR<LEN; ++PTR) {
-        DIGIT += (NUMB[PTR] - '0') * power(2, EXP);
-        --EXP;
-    }
-    printf("%d", DIGIT);
+    char * ENDPTR;
+    char * STRING = &yytext[2];
+    long DIGIT = strtol(STRING, &ENDPTR, 2);
+    printf("%ld", DIGIT);
 }
 
 {OCT} {
-    /* octal to demical */
+    /* octal to decimal */
 
-    int DIGIT = 0;
-    char * NUMB = &yytext[2];
-
-    int LEN = strlen(NUMB);
-    int EXP = LEN - 1;
-    for (int PTR=0; PTR<LEN; ++PTR) {
-        DIGIT += (NUMB[PTR] - '0') * power(8, EXP);
-        --EXP;
-    }
-    printf("%d", DIGIT);
+    char * ENDPTR;
+    char * STRING = &yytext[2];
+    long DIGIT = strtol(STRING, &ENDPTR, 8);
+    printf("%ld", DIGIT);
 }
 
 {OCT0} {
-    /* octal to demical (deprecated) */
+    /* octal to decimal (deprecated) */
     char * ENDPTR;
     char * STRING = &yytext[1];
     long DIGIT = strtol(STRING, &ENDPTR, 8);
@@ -82,41 +67,12 @@ HEX     ((0)(x|X)[0-9A-Fa-f]+)
 }
 
 {HEX} {
-    /* hexademical to demical */
+    /* hexadecimal to decimal */
 
-    int DIGIT = 0;
-    char * NUMB = &yytext[2];
-
-    int LEN = strlen(NUMB);
-    int EXP = LEN - 1;
-    for (int PTR=0; PTR<LEN; ++PTR) {
-        int BUFF;
-        switch (NUMB[PTR]) {
-            case 'A':
-            case 'a':
-                BUFF = 10;    break;
-            case 'B':
-            case 'b':
-                BUFF = 11;    break;
-            case 'C':
-            case 'c':
-                BUFF = 12;    break;
-            case 'D':
-            case 'd':
-                BUFF = 13;    break;
-            case 'E':
-            case 'e':
-                BUFF = 14;    break;
-            case 'F':
-            case 'f':
-                BUFF = 15;    break;
-            default:
-                BUFF = NUMB[PTR] - '0';
-        }
-        DIGIT += BUFF * power(16, EXP);
-        --EXP;
-    }
-    printf("%d", DIGIT);
+    char * ENDPTR;
+    char * STRING = &yytext[2];
+    long DIGIT = strtol(STRING, &ENDPTR, 16);
+    printf("%ld", DIGIT);
 }
 
     /* one line comment after number signs */
@@ -140,16 +96,6 @@ HEX     ((0)(x|X)[0-9A-Fa-f]+)
 
 %%
 /*** C Code section ***/
-
-int power(int base, int exponent);
-int power(int base, int exponent) {
-     same as pow declared in math.h
-    int power = 1;
-    for (int ctr=1; ctr<=exponent; ++ctr) {
-        power *= base;
-    }
-    return power;
-}
 
 void main(void) {
     yylex();
