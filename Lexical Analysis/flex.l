@@ -1,5 +1,5 @@
 /*                                                      */
-/* LexicalAnalysis.l                                    */
+/* flex.l                                               */
 /*                                                      */
 /* Lex program indicated for Python source              */
 /*     - convert non-demical numbers to demical         */

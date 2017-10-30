@@ -59,7 +59,7 @@ if   __name__  ==  '__main__':
 &emsp; According to the requirements, the program should be run and tested with scripts bellow.
 
 ```bash
-$ flex LexicalAnalysis.l        # > lex.yy.c
+$ flex flex.l                   # > lex.yy.c
 $ gcc lex.yy.c -lfl             # > a.out
 $ ./a.out < test.py > result.py # in default
 ```

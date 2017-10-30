@@ -2,6 +2,7 @@
 .gitignore
 .gitattributes
 .DS_Store
+Workplace
 
 # Prerequisites
 *.d
