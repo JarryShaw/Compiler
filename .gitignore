@@ -3,6 +3,7 @@
 .gitattributes
 .DS_Store
 Workplace
+*.yy.c
 
 # Prerequisites
 *.d
