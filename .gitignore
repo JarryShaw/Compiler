@@ -1,3 +1,8 @@
+.git
+.gitignore
+.gitattributes
+.DS_Store
+
 # Prerequisites
 *.d
 
