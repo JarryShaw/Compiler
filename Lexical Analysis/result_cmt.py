@@ -1,3 +1,7 @@
+' asdlkjashdJKHJKJHhksdf \' 0x1A asdlkjhAKJHD \\'
+
+" asdlkjashdJKHJKJHhksdf \" 0x1A asdlkjhAKJHD \\"
+
 26 161 26 161
 15 017  15
 2 2

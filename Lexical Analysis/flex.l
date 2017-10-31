@@ -102,8 +102,8 @@ HEX     ((0)(x|X)[0-9A-Fa-f]+)
 <PY_COMMENT>.               { putchar(yytext[0]); }
 
     /* multi-line comment in single quotes */
-"'''"                       { BEGIN(PY_SINGLE_QUOTE); printf("'''"); }
-<PY_SINGLE_QUOTE>"'''"      { BEGIN(INITIAL); printf("'''"); }
+"\'\'\'"                    { BEGIN(PY_SINGLE_QUOTE); printf("'''"); }
+<PY_SINGLE_QUOTE>"\'\'\'"   { BEGIN(INITIAL); printf("'''"); }
 <PY_SINGLE_QUOTE>[A-Z]      { putchar(tolower(yytext[0])); }
 <PY_SINGLE_QUOTE>.          { putchar(yytext[0]); }
 
@@ -114,13 +114,15 @@ HEX     ((0)(x|X)[0-9A-Fa-f]+)
 <PY_DOUBLE_QUOTE>.          { putchar(yytext[0]); }
 
     /* strings in single and double quotes */
-"'"                         { BEGIN(PY_SINGLE_STRING); printf("'"); }
-<PY_SINGLE_STRING>"'"       { BEGIN(INITIAL); printf("'"); }
+"\'"                        { BEGIN(PY_SINGLE_STRING); printf("'"); }
+<PY_SINGLE_STRING>"\'"      { BEGIN(INITIAL); printf("'"); }
+<PY_SINGLE_STRING>\\.       { printf("%s", yytext); }
 <PY_SINGLE_STRING>"\n"      { putchar(yytext[0]); }
 <PY_SINGLE_STRING>.         { putchar(yytext[0]); }
 
 "\""                        { BEGIN(PY_DOUBLE_STRING); printf("\""); }
 <PY_DOUBLE_STRING>"\""      { BEGIN(INITIAL); printf("\""); }
+<PY_DOUBLE_STRING>\\.       { printf("%s", yytext); }
 <PY_DOUBLE_STRING>"\n"      { putchar(yytext[0]); }
 <PY_DOUBLE_STRING>.         { putchar(yytext[0]); }
 
