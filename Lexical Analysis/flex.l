@@ -120,7 +120,7 @@ HEX     ((0)(x|X)[0-9A-Fa-f]+)
 <PY_SINGLE_STRING>.         { putchar(yytext[0]); }
 
 "\""                        { BEGIN(PY_DOUBLE_STRING); printf("\""); }
-<PY_DOUBLE_STRING>"\"\""    { BEGIN(INITIAL); printf("\""); }
+<PY_DOUBLE_STRING>"\""      { BEGIN(INITIAL); printf("\""); }
 <PY_DOUBLE_STRING>"\n"      { putchar(yytext[0]); }
 <PY_DOUBLE_STRING>.         { putchar(yytext[0]); }
 
