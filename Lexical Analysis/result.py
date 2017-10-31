@@ -1,6 +1,6 @@
 #!/usr/bin/env python 
-     
-'''main  fuction'''   
+
+'''main  fuction'''
 def  main():
     a = (17 + 28) * 2   # 0o21 equals 17
     b = 9 * 31   # 0b1001 equals 9
@@ -10,10 +10,8 @@ def  main():
 '''end'''
 
 if   __name__  ==  '__main__':
-    """    
-    call 
-    main function 
     """
-    main()  
-
-
+    call
+    main function
+    """
+    main()
