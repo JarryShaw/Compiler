@@ -56,6 +56,7 @@ if   __name__  ==  '__main__':
     """
     main()
 ```
+
 &emsp; According to the requirements, the program should be run and tested with scripts bellow.
 
 ```bash
