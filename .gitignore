@@ -1,59 +1,31 @@
-.git
-.gitignore
-.gitattributes
+
 .DS_Store
 Workplace
-*.yy.c
 
-# Prerequisites
-*.d
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Created by https://www.gitignore.io/api/flex
 
-# Linker output
-*.ilk
-*.map
-*.exp
+### Flex ###
 
-# Precompiled Headers
-*.gch
-*.pch
+# Build and Release Folders
+bin/
+bin-debug/
+bin-release/
+.actionScriptProperties
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# only for a non-library project
+.flexProperties
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# only for library project
+.flexLibProperties
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Other files and folders
+.settings/
+.project/
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+.FlexUnitSettings
+.externalToolBuilders
+.model
+
+# End of https://www.gitignore.io/api/flex
