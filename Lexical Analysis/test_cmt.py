@@ -1,0 +1,82 @@
+' asdlkjashdJKHJKJHhksdf \' 0x1A asdlkjhAKJHD \\'
+
+" asdlkjashdJKHJKJHhksdf \" 0x1A asdlkjhAKJHD \\"
+
+0x1A 0xA1 0X1A 0XA1
+0o17 017  0O17
+0b10 0B10
+017.9 12.2
+
+_0x21
+a0x21
+_skdasd0x123asdkjh
+
+
+''' ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017  '''
+
+''' ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017
+'''
+
+'''
+ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 '''
+
+'''
+ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017
+'''
+
+""" ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 """
+
+""" ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017
+"""
+
+"""
+ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 """
+
+"""
+ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017
+"""
+
+""" '''
+ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017
+'''
+ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017
+"""
+
+""" '''
+ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017
+'''
+ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017
+'''
+"""
+
+""" # ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017
+''' """
+
+# ABCDEFGhijklmnOPQRSTU
+
+# ''' """ ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 """ ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 ''' ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 ''' '''
+
+# """ """ ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 """ ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 ''' ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 ''' """
+
+' ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 '
+
+" ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 "
+
+' \
+ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 '
+
+" \
+ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 "
+
+' # ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 \
+""" \
+ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 \
+""" \
+ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 '
+
+" # ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 \
+''' \
+ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 \
+''' \
+ABCDEFGhijklmnOPQRSTU 0x1A 0xA1 0o17 017 \
+"
