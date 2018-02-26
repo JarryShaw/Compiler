@@ -64,3 +64,5 @@ $ flex flex.l                   # > lex.yy.c
 $ gcc lex.yy.c -lfl             # > a.out
 $ ./a.out < test.py > result.py # in default
 ```
+
+But due to some other reasons, the test sample and corresponding result are stored in `test` and `result`.
